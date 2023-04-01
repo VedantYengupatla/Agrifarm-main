@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - AgriFarm</title>
+    <link rel="stylesheet" href="/shop.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="shortcut icon" href="/img/wheat.png" type="image/x-icon">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <section id="navbar">
+        <div id="logo">
+            <i class="uil uil-bars" id="menu" onclick="dropmenu()"></i>
+            <a href="/index.html"><img src="/img/logo1.png" alt=""></a>
+            <input type="search" name="" placeholder="Search AgriFarm..." onkeyup="searchFun()" id="search">
+        </div>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <button id="seller" onclick="seller()">Become a Seller</button>
+    </section>
+    <section id="dropmenu">
+        <li><i class="uil uil-shopping-cart"></i><a href="#">Shop</a></li><hr>
+        <li><i class="uil uil-tag-alt"></i><a href="#">Sell</a></li><hr>
+        <li><i class="uil uil-shovel"></i><a href="#">Tools</a></li><hr>
+        <li><i class="uil uil-shovel"></i><a href="#">Seeds</a></li><hr>
+        <li><i class="uil uil-shovel"></i><a href="#">Animals</a></li><hr>
+        <li><i class="uil uil-shovel"></i><a href="#">Fertlizer</a></li>
+    </section>
+    <section id="seller-form">
+        <div id="form">
+            <i class="uil uil-multiply" id="closeform" onclick="seller()"></i>
+            <h1>Seller Form</h1>
+            <input type="text" name="name" id="addTitle" placeholder="Enter Your Title"autocomplete="off" autocapitalize="none">
+            <textarea name="" id="addTxt" cols="10" rows="5" placeholder="Write Short Discription"></textarea>
+            <input type="tel" name="" maxlength="10" id="number" placeholder="Enter Your Mobile Number">
+            <label class="custom-file-upload">
+                <input type="file" accept="image/*" onchange="loadFile(event)">
+            </label>
+            <h3 id="login"><a href="/index.html">Log in</a></h3>
+            <button id="register">Register</button>
+        </div>
+    </section>
+    <section id="shop">
+        <h1 id="head">Shopping</h1>
+        <div id="box">
+            <!-- <div class="main-box" id="box-1">
+                <img src="/img/raphael-rychetsky-li9JfUHQfOY-unsplash.jpg" alt="">
+                <h1>Title Of Advertisement</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="box" id="box-2">
+                <img src="/img/raphael-rychetsky-li9JfUHQfOY-unsplash.jpg" alt="">
+                <h1>Title Of Advertisement</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="box" id="box-3">
+                <img src="/img/raphael-rychetsky-li9JfUHQfOY-unsplash.jpg" alt="">
+                <h1>Title Of Advertisement</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="box" id="box-4">
+                <img src="/img/raphael-rychetsky-li9JfUHQfOY-unsplash.jpg" alt="">
+                <h1>Title Of Advertisement</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div> -->
+        
+        </div>
+        
+    </section>
+    <script>
+        let x = document.getElementById("dropmenu");
+        function dropmenu(){
+            if (x.style.display == "none") {
+                x.style.display = "block";
+                x.style.transition = "all 1.5s ease-in";
+            }
+            else{
+                x.style.display = "none";
+                x.style.transition = "all 1.5s ease-in";
+            }
+        }
+        let y =  document.getElementById("form");
+        function seller(){
+            if (y.style.display == "none") {
+                y.style.display = "flex";
+                // document.body.style.filter = "blur(10px);"
+                y.style.transition = "all 1.5s ease-in";
+            }
+            else{
+                y.style.display = "none";
+                y.style.transition = "all 1.5s ease-in";
+            }
+        }
+    </script
+    </script>
+    <script src="/register.js"></script>
+</body>
+</html>

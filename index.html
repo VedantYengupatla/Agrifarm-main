@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - AgriFarm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="shortcut icon" href="/img/wheat.png" type="image/x-icon">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <section id="navbar">
+        <div id="logo">
+            <i class="uil uil-bars" id="menu" onclick="dropmenu()"></i>
+            <a href="#home"><img src="/img/logo1.png" alt=""></a>
+            <input type="search" name="" placeholder="Search" id="search">
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <button id="seller" onclick="seller()">Become a Seller</button>
+    </section>
+    <section id="dropmenu">
+        <li><i class="uil uil-shopping-cart"></i><a href="/shop.html">Shop</a></li><hr>
+        <li><i class="uil uil-tag-alt"></i><a href="#">Sell</a></li><hr>
+        <li><i class="uil uil-shovel"></i><a href="#">Tools</a></li><hr>
+        <li><i class="uil uil-shovel"></i><a href="#">Seeds</a></li><hr>
+        <li><i class="uil uil-shovel"></i><a href="#">Animals</a></li><hr>
+        <li><i class="uil uil-shovel"></i><a href="#">Fertlizer</a></li>
+    </section>
+    <section id="home">
+        <div id="blackbox" ></div>
+        <h1 id="head" class="side">We Sell What <br> You Need </h1>
+        <p class="side" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro sed neque officia, in aliquam consectetur obcaecati, nihil eos impedit quaerat fugiat tempora inventore fuga, debitis praesentium! Libero minima iusto debitis.</p>
+        <button  id="btn" class="side" onclick="seller()">Become a Seller</button>
+    </section>
+    <section id="seller-form">
+        <div id="form">
+            <i class="uil uil-multiply" id="closeform" onclick="seller()"></i>
+            <h1>Seller Form</h1>
+            <input type="text" name="name" id="addTitle" required placeholder="Enter Your Title" style="text-transform: lowercase;">
+            <textarea name="" id="addTxt" cols="10" required rows="5" placeholder="Write Short Discription"></textarea>
+            <input type="number" name="" id="number" placeholder="Enter Your Mobile Number">
+            <label class="custom-file-upload">
+                <input id="addImg" type="file"/>
+            </label>
+            <h3 id="login"><a href="/index.html">Log in</a></h3>
+            <button id="register" type="submit">Register</button>
+        </div>
+    </section>
+    <script>
+        let x = document.getElementById("dropmenu");
+        function dropmenu(){
+            if (x.style.display == "none") {
+                x.style.display = "block";
+                x.style.transition = "all 1.5s ease-in";
+            }
+            else{
+                x.style.display = "none";
+                x.style.transition = "all 1.5s ease-in";
+            }
+        }
+        let y =  document.getElementById("form");
+        
+
+    </script>
+    <script src="/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* Navbar */
+@media (max-width:1270px) {
+    ul{
+        display: none;
+    }
+    #search{
+        left: -10%;
+    }
+    #dropmenu{
+        width: 30%;
+    }
+}
+@media  (max-width:1020px) {
+
+    #btn{
+        top:600px;
+    }
+    #dropmenu{
+        width: 30%;
+    }
+}
+@media screen and (max-width:925px) {
+    #home h1{
+        font-size: 7.5rem;
+    }
+    #home p{
+        font-size: 18px;
+    }
+    #dropmenu{
+        width: 30%;
+    }
+    #dropmenu{
+        width: 30%;
+    }
+}
+@media screen and (max-width:870px) {
+    #home h1{
+        font-size: 6.5rem;
+    }
+    #home p{
+        font-size: 17px;
+    }
+    #dropmenu{
+        width: 30%;
+    }
+    #logo input{
+        width: 50%;
+        left:-10%;
+    }
+    #logo i{
+        font-size: 30px;
+    }
+    #logo a img{
+        width: 40%;
+    }
+}
+@media screen and (max-width:800px) {
+    #logo input{
+        width: 40%;
+        left:-15%;
+    }
+    #logo i{
+        position: absolute;
+        left:5%;
+        font-size: 30px;
+    }
+    #logo a img{
+        left:100px;
+        width: 35%;
+    }
+    #form{
+        width: 60%;
+    }
+    .custom-file-upload{
+        padding:0px;
+    }
+}
